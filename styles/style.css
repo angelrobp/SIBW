@@ -1,0 +1,30 @@
+div.header-container {
+    width:100%;
+    background-color: red;
+    height: 15%;
+}
+div.elements-container {
+    width: 20%;
+    background-color: blue;
+}
+
+div.pictures-container {
+    width: 80%;
+    background-color: springgreen;
+}
+
+div.footer-container {
+    width:100%;
+    margin: auto;
+    background-color: yellow;
+    height: 10%;
+}
+
+div {
+    float: left;
+}
+
+div.cuerpo-container{
+    width: 100%;
+    height: 75%;
+}
