@@ -1,7 +1,6 @@
 div.header-container {
     width:100%;
-    background-color: red;
-    height: 15%;
+    background-color: #e9e8e8;
 }
 div.elements-container {
     width: 20%;
@@ -15,9 +14,9 @@ div.pictures-container {
 
 div.footer-container {
     width:100%;
-    margin: auto;
-    background-color: yellow;
-    height: 10%;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
 div {
@@ -26,5 +25,36 @@ div {
 
 div.cuerpo-container{
     width: 100%;
-    height: 75%;
+}
+
+.logo{
+    width: 50%;
+}
+
+div.header-icon{
+    margin: 1%;
+}
+
+.escudo-elemento{
+    width: 50%;
+}
+
+div.header-title{
+    width: 50%;
+}
+
+div.fila{
+    width: 100%;
+}
+
+div.imagen-elemento{
+    text-align: center;
+}
+
+div.informacion{
+    width: 80%;
+    background-color: aliceblue;
+}
+.imagen-info{
+    width: 100%;
 }
