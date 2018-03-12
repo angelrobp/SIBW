@@ -1,30 +1,84 @@
-div.header-container {
-    width:100%;
-    background-color: red;
-    height: 15%;
-}
-div.elements-container {
-    width: 20%;
-    background-color: blue;
-}
-
-div.pictures-container {
-    width: 80%;
-    background-color: springgreen;
-}
-
-div.footer-container {
-    width:100%;
-    margin: auto;
-    background-color: yellow;
-    height: 10%;
+body {
+    background: url("../img/museofondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
 }
 
 div {
     float: left;
 }
 
+div.header-container {
+    width:100%;
+    margin-bottom: 1%;
+    background-color: rgba(113, 113, 113, 0.75);
+    color: white;
+}
+
+div.elements-container {
+    width: 20%;
+    background-color: rgba(0, 15, 255, 0.35);
+    margin-right: 1%;
+}
+
+div.pictures-container {
+    width: 79%;
+    background-color: rgba(241, 241, 241, 0.35);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+}
+
+div.footer-container {
+    width:100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top:1%;
+}
+
 div.cuerpo-container{
     width: 100%;
-    height: 75%;
+}
+
+.logo{
+    width: 100%;
+}
+
+div.header-icon{
+    margin: 0.1%;
+    width: 11%;
+}
+
+.escudo-elemento{
+    width: 100%;
+}
+
+div.header-title{
+    width: 50%;
+}
+
+div.fila{
+    width: 100%;
+}
+
+div.imagen-elemento{
+    width: 40%;
+    display:block;
+    margin:auto;
+}
+
+div.informacion{
+    width: 80%;
+    background-color: aliceblue;
+}
+.imagen-info{
+    width: 100%;
+}
+
+div.elemento {
+    width: 33%;
+}
+
+div.nombre-elemento {
+    width: 100%;
+    text-align: center;
 }
