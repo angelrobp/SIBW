@@ -1,0 +1,275 @@
+body {
+    background: url("../img/museofondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: black;
+    font-family: 'Molengo', serif;
+    float: left;
+    position: absolute;
+}
+
+div {
+    float: left;
+}
+
+div.header-container {
+    width:100%;
+    margin-bottom: 1%;
+    background-color: rgba(226, 32, 32, 0.82);
+    color: white;
+}
+
+div.elements-container {
+    width: 20%;
+    background-color: rgba(241, 241, 241, 0.7);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+    margin-right: 1%;
+}
+
+div.pictures-container {
+    width: 79%;
+    background-color: rgba(241, 241, 241, 0.35);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+}
+
+div.footer-container {
+    width:100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top:1%;
+}
+
+div.cuerpo-container{
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    float:left;
+}
+
+div.fit-icon {
+    width: 11%;
+    margin-right: 19%;
+    margin-left: 7%;
+}
+
+.title{
+    width: 100%;
+    margin-top: 2.7%;
+    font-family: 'Graduate';
+    font-size: 20px;
+}
+
+div.header-icon{
+    margin: 0.1%;
+    width: fit-content;
+
+}
+
+.escudo-elemento{
+    width: 100%;
+}
+
+div.header-title{
+    width: 63%;
+}
+
+div.fila{
+    margin-top: 3%;
+    width: 100%;
+}
+
+div.imagen-elemento{
+    width: 40%;
+    float: none;
+    margin: 0 auto;
+    background-color: #191616a1;
+    border-radius: 22%;
+    padding: 3%;
+}
+
+div.elemento {
+    width: fit-content;
+}
+
+div.informacion{
+    width: 74%;
+    background-color: rgba(0, 0, 0, 0.82);
+    color: white;
+    margin-right: 5%;
+    font-family: 'Molengo';
+}
+
+div.texto{
+    width: 90%;
+    margin-left: 5%;
+
+}
+div.imagen-info{
+    width: 100%;
+    margin: 3% 0 3% 0;
+}
+
+img.imagen-articulo{
+    width: 100%;
+}
+
+div.nombre-elemento {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+div.elemento-box {
+    width: 33%;
+}
+
+a {
+    color:black;
+    text-decoration:none; !important;
+}
+
+.header-menu a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+
+/* selected link */
+a.active {
+    border-bottom: 3px solid white;
+}
+
+/* mouse over link */
+a.header-menu:hover {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+/* selected link */
+a.header-menu:active {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+div.elements-title {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.82);
+    margin-bottom: 6%;
+    color: white;
+    width: 100%;
+}
+
+div.pictures-title {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.82);
+    margin-bottom: 2%;
+    color: white;
+    width: 100%;
+}
+
+div.elements-menu {
+    width: 100%;
+    word-wrap:break-word;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+}
+
+nav {
+    font-family: 'Hammersmith One';
+}
+
+div.footer-redes{
+    width:100%;
+    margin-top: 1%;
+}
+
+img.icon-redes {
+    width: 4%;
+    margin-right: 0.5%;
+}
+
+h2 {
+    margin: 2%;
+}
+div.cabecera{
+    width: 100%;
+}
+div.titulo-articulo{
+    font-size: 30px;
+    width: 90%;
+
+}
+
+div.escudo-articulo {
+    float: right;
+    width: 24%;
+    margin-left: 5%;
+}
+div.subtitulo-articulo{
+    font-size: 25px;
+    width: 100%;
+}
+
+div.cuerpo-articulo{
+    width: 100%;
+}
+
+div.imprimir{
+    margin-top: 2%;
+    background-color: lightgray;
+    width: 5%;
+}
+.imprimir-boton{
+    width: 100%;
+}
+
+div.texto-imprimir{
+    background-color: white;
+    padding: 4%;
+    font-family:  'Molengo';
+}
+
+div.titulo-articulo-imprimir{
+    width: 100%;
+    font-family: 'Graduate';
+    font-size: 35px;
+}
+
+div.subtitulo-articulo-imprimir{
+    width: 100%;
+    font-size: 29px;
+}
+
+div.cuerpo-articulo-imprimir{
+    width: 100%;
+    font-size: 18px;
+}
+
+div.title-imprimir {
+    width: 77%;
+    padding: 6% 0;
+    text-align: center;
+    font-family: 'Graduate';
+    font-size: 20px;
+}
+
+div.header-imprimir{
+    width: 100%;
+}
