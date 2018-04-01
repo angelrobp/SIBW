@@ -6,6 +6,7 @@ body {
     font-family: 'Molengo', serif;
     float: left;
     position: absolute;
+    display:block;
 }
 
 div {
@@ -272,4 +273,10 @@ div.title-imprimir {
 
 div.header-imprimir{
     width: 100%;
+}
+
+div.texto-contacto{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
 }

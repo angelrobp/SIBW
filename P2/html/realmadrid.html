@@ -60,7 +60,7 @@
     </div>
 
     <!--OBRA-->
-    <div class="informacion">
+    <div id="informacion">
         <div class="texto">
             <div class="cabecera">
                 <div class="titulo-articulo">
@@ -145,6 +145,64 @@
             </div>
         </div>
     </div>
+
+    <!-- Sección de comentarios -->
+    <div id="contenedor-comentarios">
+        <div class="imagen-comentarios">
+            <img id="icono-comentarios" src="../img/chat-ico.png">
+        </div>
+        <div id="comentarios">
+            <div class="elements-title">
+                <div id="back-comentarios">
+                    <img onclick="hasClicked()" id="back-icon" src="../img/back-icon.png">
+                </div>
+                <h2>Comentarios</h2>
+            </div>
+            <div id="comentarios-anteriores">
+                <div class="comentario-usuario impar">
+                    <div class="mensaje-user">
+                        <div class="user-img">
+                            <div class="nombre-usuario">Juan</div>
+                            <img src="../img/user.png">
+                        </div>
+                        <div class="texto-user">
+                            <p>
+                                Cristiano leyenda
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="time-right">22/3/2018 20:17</span>
+                </div>
+                <div class="comentario-usuario par">
+                    <div class="mensaje-user">
+                        <div class="user-img">
+                            <div class="nombre-usuario">Luis</div>
+                            <img src="../img/user1.png">
+                            </div>
+                        <div class="texto-user">
+                            <p>
+                                Raul eterno 7
+                            </p>
+                        </div>
+                    </div>
+                    <span class="time-right">22/3/2018 10:17</span>
+                </div>
+            </div>
+            <div class="send-message comentario-usuario">
+                <form id="form-messages" >
+                    <input id="input-nombre" type="text" name="firstname" placeholder="Nombre.." required/>
+                    <input id="input-email" type="email" name="email" placeholder="Email.." required/>
+                    <textarea id="input-comentario" name="comentario" placeholder="Escriba su comentario aqui..." onkeyup="reviser(false)" onfocus="clearError()"></textarea>
+                   <spam id="error-message"></spam>
+                    <input id="input-send" type="submit" value="Enviar"/>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/script-comments.js"></script>
 </div>
 
 
