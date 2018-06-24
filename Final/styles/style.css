@@ -1,0 +1,979 @@
+body {
+    background: url("../img/museofondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: black;
+    font-family: 'Molengo', serif;
+    float: left;
+    position: absolute;
+}
+
+div {
+    float: left;
+}
+
+div.header-container {
+    width:100%;
+    margin-bottom: 1%;
+    background-color: rgba(226, 32, 32, 0.82);
+    color: white;
+}
+
+/*--Dropdown */
+
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 9px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-bottom: 3px solid #ffffff00
+}
+
+.dropdown .dropbtn:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display:block;
+}
+
+.show a {
+    float:none !important;
+}
+
+/* ------------------------------------ */
+
+/*---------------------------------------SING IN SING UP -----------------------------*/
+
+* {box-sizing: border-box}
+
+#formSingUp input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #ddd;
+}
+
+/* Add a background color when the inputs get focus */
+#formSingUp input[type=text]:focus, input[type=password]:focus {
+    background-color: #bebebe  !important;
+    outline: none;
+}
+
+#formSingIn input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #ddd;
+}
+
+#formSingUp button:hover {
+    opacity:1;
+}
+
+/* Add a background color when the inputs get focus */
+#formSingIn input[type=text]:focus, input[type=password]:focus {
+    background-color: #bebebe  !important;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+.cancelbtn-sign, .send-signup, .send-signin{
+    background-color: #4CAF50  !important;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+#formSingIn button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn-sign {
+    padding: 14px 20px;
+    background-color: #f44336 !important;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn-sign, .send-signup, .send-signin {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container-sign {
+    padding: 16px;
+    float:none !important;
+}
+
+/* The Modal (background) */
+.modal-sing {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #474e5d9e;
+    padding-top: 50px;
+    overflow: auto;
+}
+
+/* Modal Content/Box */
+.modal-sign-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    float: none !important;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close-sign {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close-sign:hover,
+.close-sign:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix {
+    float:none !important;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------------ TABS LOG IN UP --------------------------------*/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 80% !important;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*------------------------------------------------------------------------------------*/
+div.elements-container {
+    /*width: 20%;     */
+    width: 15%;
+    background-color: rgba(241, 241, 241, 0.7);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+    margin-right: 1%;
+}
+
+div.pictures-container {
+    width: 79%;
+    background-color: rgba(241, 241, 241, 0.35);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+}
+
+div.footer-container {
+    width:100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top:1%;
+}
+
+div.cuerpo-container{
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    float:left;
+}
+
+div.fit-icon {
+    width: 11%;
+    margin-right: 19%;
+    margin-left: 7%;
+}
+
+.title{
+    width: 100%;
+    margin-top: 2.7%;
+    font-family: 'Graduate';
+    font-size: 20px;
+}
+
+div.header-icon{
+    margin: 0.1%;
+    width: fit-content;
+
+}
+
+.escudo-elemento{
+    width: 100%;
+}
+
+div.header-title{
+    width: 63%;
+}
+
+div.fila{
+    margin-top: 3%;
+    width: 100%;
+}
+
+div.imagen-elemento{
+    width: 40%;
+    float: none;
+    margin: 0 auto;
+    background-color: #191616a1;
+    border-radius: 22%;
+    padding: 3%;
+}
+
+div.elemento {
+    width: fit-content;
+}
+
+#informacion{
+    /*width: 74%;*/
+    /*con ventana de comentarios abierta width: 59%;*/
+    width: 79%;
+    background-color: rgba(0, 0, 0, 0.82);
+    color: white;
+   /* margin-right: 5%;*/
+    margin-right: 1%;
+    font-family: 'Molengo';
+
+    transition:         height 1s ease, width 1s ease;
+    -moz-transition:    height 1s ease, width 1s ease;
+    -ms-transition:     height 1s ease, width 1s ease;
+    -o-transition:      height 1s ease, width 1s ease;
+    -webkit-transition: height 1s ease, width 1s ease;
+}
+
+
+div.texto{
+    width: 90%;
+    margin-left: 5%;
+
+}
+div.imagen-info{
+    width: 100%;
+    margin: 3% 0 3% 0;
+}
+
+img.imagen-articulo{
+    width: 100%;
+}
+
+div.nombre-elemento {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+div.elemento-box {
+    width: 33%;
+}
+
+a {
+    color:black;
+    text-decoration:none; !important;
+}
+
+.header-menu a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+/* selected link */
+a.active {
+    border-bottom: 3px solid white;
+}
+
+/* mouse over link */
+a.header-menu:hover {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+/* selected link */
+a.header-menu:active {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+div.elements-title {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.82);
+    margin-bottom: 6%;
+    color: white;
+    width: 100%;
+}
+
+div.pictures-title {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.82);
+    margin-bottom: 2%;
+    color: white;
+    width: 100%;
+}
+
+div.elements-menu {
+    width: 100%;
+    word-wrap:break-word;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+}
+
+nav {
+    font-family: 'Hammersmith One';
+}
+
+div.footer-redes{
+    width:100%;
+    margin-top: 1%;
+}
+
+img.icon-redes {
+    width: 4%;
+    margin-right: 0.5%;
+}
+
+.myBtn {
+    cursor: pointer;
+}
+
+h2 {
+    margin: 2%;
+}
+div.cabecera{
+    width: 100%;
+}
+div.titulo-articulo{
+    font-size: 30px;
+    width: 90%;
+
+}
+
+.fecha {
+    display: block;
+    color: #aaa;
+    font-size: 15px;
+}
+
+.fecha-imprimir {
+    display: block;
+    color: #000000;
+    font-size: 15px;
+}
+
+div.escudo-articulo {
+    float: right;
+    width: 24%;
+    margin-left: 5%;
+}
+div.subtitulo-articulo{
+    font-size: 25px;
+    width: 100%;
+}
+
+div.cuerpo-articulo{
+    width: 100%;
+}
+
+div.imprimir{
+    margin-top: 2%;
+    background-color: lightgray;
+    width: 5%;
+}
+.imprimir-boton{
+    width: 100%;
+}
+
+div.texto-imprimir{
+    background-color: white;
+    padding: 4%;
+    font-family:  'Molengo';
+}
+
+div.titulo-articulo-imprimir{
+    width: 100%;
+    font-family: 'Graduate';
+    font-size: 35px;
+}
+
+div.subtitulo-articulo-imprimir{
+    width: 100%;
+    font-size: 29px;
+}
+
+div.cuerpo-articulo-imprimir{
+    width: 100%;
+    font-size: 18px;
+}
+
+div.title-imprimir {
+    width: 77%;
+    padding: 6% 0;
+    text-align: center;
+    font-family: 'Graduate';
+    font-size: 20px;
+}
+
+.escudo-imprimir {
+    width:100%;
+}
+
+div.header-imprimir{
+    width: 100%;
+}
+
+div.contacto {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+/*COMENTARIOS*/
+
+#comentarios {
+    /*Tamaño expandido width: 24%;*/
+    width: 100%;
+    display:none;
+    background-color: rgba(241, 241, 241, 0.7);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+}
+
+#contenedor-comentarios {
+    width: 4%;
+    background-color: rgba(241, 241, 241, 0.7);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+    transition:         height 1s ease, width 1s ease;
+    -moz-transition:    height 1s ease, width 1s ease;
+    -ms-transition:     height 1s ease, width 1s ease;
+    -o-transition:      height 1s ease, width 1s ease;
+    -webkit-transition: height 1s ease, width 1s ease;
+}
+
+div.imagen-comentarios {
+    cursor: pointer;
+    width: 100%;
+}
+
+#icono-comentarios {
+    width: 100%;
+    max-width: 8vh;
+    max-height: 8vh;
+}
+
+div.comentario-usuario {
+    width: 90%;
+    float: left;
+    margin: 2%;
+    border: 2px solid #989898;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+div.mensaje-user {
+    width: 100%;
+    word-wrap:break-word;
+    max-width: 100%;
+}
+
+div.nombre-usuario{
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.par {
+    background-color: #ddd;
+}
+
+div.par .user-img{
+    float:right;
+ }
+
+div.par  span{
+    float:left;
+}
+
+div.impar .nombre-usuario{
+    width: 100%;
+    text-align: center;
+}
+
+div.par .nombre-usuario{
+    width: 100%;
+    text-align: center;
+}
+
+.user-img {
+    width: 17%;
+    color: #1f77ad;
+    margin: 3% 5% 2% 3%;
+}
+
+.texto-user{
+    width: 73%;
+    margin:1%;
+}
+
+.user-img img{
+    width: 100%;
+}
+
+.time-right {
+    display: block;
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    display: block;
+    float: left;
+    color: #999;
+}
+
+#back-comentarios {
+    width: 10%;
+}
+
+#back-icon{
+    width: 100%;
+    margin: 1% 0 0 5%;
+    cursor: pointer;
+}
+/* FORMULARIO DE COMENTARIOS */
+/*
+#input-nombre, #input-email, #input-email, #input-comentario , #input-send {
+    margin: 1%;
+}
+
+#input-nombre{
+    width: 25%;
+}
+
+#input-email{
+    width: 47%;
+}
+
+*/
+#input-comentario {
+    width: 90%;
+}
+
+#input-send {
+    width: 100%;
+}
+
+#comentarios-anteriores {
+    width: 100%;
+    overflow: scroll;
+    max-height: 350px;
+    overflow-x: hidden;
+}
+
+#form-messages input[type=submit] {
+    background-color: #3179b9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#form-messages input[type=submit]:hover {
+    background-color: #29679e;
+}
+
+.modal-body input[type=submit] {
+    background-color: #3179b9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.modal-body input[type=submit]:hover {
+    background-color: #29679e;
+}
+
+#form-messages input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.error-message {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    color: red;
+    word-wrap: break-word;
+    display: none;
+}
+
+
+/* The Modal (background) */
+.modal {
+    text-align: center;
+    float:initial !important;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    float: initial !important;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    float: initial !important;
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    float: initial !important;
+    padding: 2px 16px;}
+
+
+#input-accept {
+    float: inherit;
+    display: block;
+}
+
+/*---------------------------------Panel de control--------------------------*/
+
+#controlpanel {
+    /*Tamaño expandido width: 24%;*/
+    width: 100%;
+    display:none;
+    background-color: rgba(241, 241, 241, 0.7);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+}
+
+#contenedor-controlpanel {
+    width: 4%;
+    background-color: rgba(241, 241, 241, 0.7);
+    box-shadow: 0 2px 21px 0 rgba(0,0,0,0.16),0 2px 22px 0 rgba(0,0,0,0.12)!important;
+    transition:         height 1s ease, width 1s ease;
+    -moz-transition:    height 1s ease, width 1s ease;
+    -ms-transition:     height 1s ease, width 1s ease;
+    -o-transition:      height 1s ease, width 1s ease;
+    -webkit-transition: height 1s ease, width 1s ease;
+    float:right;
+    margin-bottom: 1%;
+}
+
+div.imagen-controlpanel {
+    cursor: pointer;
+    width: 100%;
+}
+
+#icono-controlpanel {
+    width: 100%;
+    max-width: 8vh;
+    max-height: 8vh;
+}
+
+#back-controlpanel {
+    width: 4%;
+}
+
+#back-icon-controlpanel{
+    width: 100%;
+    margin: 1% 0 0 5%;
+    cursor: pointer;
+}
+
+
+.opcion {
+     width: 100%;
+   /*  margin: 3%;*/
+ }
+
+/* ASIGNAR ELIMINAR PERMISOS*/
+
+
+.tablaUsuarios table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.tablaUsuarios th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+.tablaUsuarios th {
+    border: 2px black solid;
+}
+
+.tablaUsuarios tr:nth-child(even) {
+    background-color: #ffeb9b;
+}
+
+.tituloTabla {
+    color:white;
+    background-color:grey;
+}
+
+.tablaUsuarios {
+    height:80px;
+    overflow:auto;
+}
+
+#controlpanel .tab {
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+.panelDerecha {
+    width: 50%;
+    margin-left: 1%;
+}
+/*-------------------------------------------------------------------------- */
+
+/*---------------------------Busqueda obras--------------------------------*/
+#livesearch {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.highlight {
+    background-color: black;
+    color: white;
+}
+
+.buscador {
+    float: right;
+    padding: 1%;
+    width: 35%;
+}
+/*
+#busqueda {
+    width: 100%;
+    background-color: white;
+    background-image: url('../img/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+*/
+.container-search{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-search input#busqueda{
+    width: 100%;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+
+.container-search input#busqueda::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-search input#busqueda:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-search input#busqueda::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container-search input#busqueda:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container-search .icon-search{
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.container-search input#busqueda:hover, .container-search input#busqueda:focus, .container-search input#busqueda:active{
+    outline:none;
+    background: #ffffff;
+}
+
+/*-------------------------------------------------------------------------- */
